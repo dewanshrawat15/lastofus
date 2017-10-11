@@ -1,0 +1,420 @@
+
+body{
+	margin: 0;
+	overflow: hidden;
+}
+
+.menu{
+	position: fixed;
+	top: 52%;
+	left: 97.5%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+
+.circle-li{
+	position: relative;
+	width: 0.85em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 0.85em;
+	background-color: rgba(255, 255, 255, 0.45);
+	transition: 500ms ease-in-out;
+	z-index: 10;
+	border-radius: 100%;
+}
+
+.li-active{
+	transition: 500ms ease-in-out;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.screen1{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url('bg1.jpg') center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	z-index: 1005;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 500ms ease-in-out;
+	font-size: 5vmin;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+}
+
+.line{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transition: 500ms ease-in-out;
+	height: 0.2vmin;
+	background-color: #fff;
+	border: 0;
+	outline: none;
+	z-index: 1000;
+	transform: translate(-50%, -50%);
+}
+
+.wide{
+	animation: linearly 500ms ease-in-out;
+	width: 24vw;
+}
+
+@keyframes linearly{
+	0%{width: 0vw;}
+	50%{width: 12vw;}
+	100%{width: 24vw;}
+}
+
+.opa{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.screen2{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;	
+	background: url('bg2.png') center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+	top: 100%;
+	filter: grayscale(0.65);
+}
+
+.screen3{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 200vh;
+	padding-top: 20vh;
+	background: url('bg3.jpg') center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+.screen4{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url('bg4.png') center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+	top: 300%;
+}
+
+.screen5{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url('bg5.jpg') center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	top: 400%;
+}
+
+.sayer{
+	color: #ffbf00;
+}
+
+.sayer2{
+	font-weight: bold;
+	color: #ffbf00;
+}
+
+.heading{
+	position: absolute;
+	top: 25%;
+	transition: 500ms ease-in-out;
+	left: 18%;
+	opacity: 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5vmin;
+	color: #fff;
+	transform: translate(-50%, -50%);
+}
+
+.s3-heading{
+	position: absolute;
+	top: 25%;
+	transition: 500ms ease-in-out;
+	left: 18%;
+	opacity: 1;
+	visibility: visible;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5vmin;
+	color: #fff;
+	transform: translate(-50%, -50%);
+}
+
+.text1{
+	position: absolute;
+	padding-right: 20vmin;
+	top: 45%;
+	left: 48.5%;
+	opacity: 0;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-size: 3vmin;
+	transform: translate(-50%, -50%);
+}
+
+.heading1{
+	opacity: 0;
+	position: absolute;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5vmin;
+	top:6%;
+	color: #fff;
+	left: 10%;
+}
+
+.text2{
+	position: absolute;
+	padding-right: 20vmin;
+	top: 55%;
+	left: 36.5%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transform: translate(-50%, -50%);
+}
+
+.text3{
+	position: absolute;
+	top: 78%;
+	padding-right: 20vmin;
+	left: 36.5%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transform: translate(-50%, -50%);
+}
+
+.g-text1{
+	position: absolute;
+	padding-right: 20vmin;
+	top: 40%;
+	left: 32%;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	transition: 500ms ease-in-out;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3.5vmin;
+	transform: translate(-50%, -50%);
+}
+
+
+.r-text1{
+	opacity: 0;
+	position: absolute;
+	padding-right: 20vmin;
+	top: 21.5%;
+	left: 40%;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transition: 500ms ease-in-out;
+	transform: translate(-50%, -50%);
+}
+
+.r-text2{
+	opacity: 0;
+	position: absolute;
+	padding-right: 20vmin;
+	top: 35.5%;
+	color: #fff;
+	left: 40.1%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transition: 500ms ease-in-out;
+	transform: translate(-50%, -50%);
+}
+
+.r-text3{
+	opacity: 0;
+	position: absolute;
+	top: 51.5%;
+	color: #fff;
+	padding-right: 20vmin;
+	left: 40.1%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transition: 500ms ease-in-out;
+	transform: translate(-50%, -50%);
+}
+
+.r-text4{
+	opacity: 0;
+	position: absolute;
+	padding-right: 20vmin;
+	top: 65.5%;
+	color: #fff;
+	left: 39.5%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transition: 500ms ease-in-out;
+	transform: translate(-50%, -50%);
+}
+
+.r-text5{
+	opacity: 0;
+	position: absolute;
+	top: 80.5%;
+	color: #fff;
+	padding-right: 20vmin;
+	left: 36.2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vmin;
+	transition: 500ms ease-in-out;
+	transform: translate(-50%, -50%);
+}
+
+.contact-us{
+	position: absolute;
+	top: 10%;
+	left: 18%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5vmin;
+	transform: translate(-50%, -50%);
+}
+
+.circle{
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	width: 50vmin;
+	height: 50vmin;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.in{
+	position: absolute;
+	top: 25%;
+	outline: none;
+	height: 3.5vh;
+	padding-left: 2vw;
+	padding-bottom: 2vh;
+	font-size: 3vmin;
+	padding-top: 2vh;
+	width: 20vw;
+	border: 0;
+	transition: 500ms ease-in-out;
+	left: 15%;
+	transform: translate(-50%, -50%);
+}
+
+.in:focus{
+	border: 0.1vmin solid #e91e63;
+	transition: 500ms ease-in-out;
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	text-align: center;
+	font-family: 'Nosifer', cursive;
+	font-size: 8vmin;
+	transform: translate(-50%, -50%);
+}
+
+/* ANIMS */
+
+.slide-in{
+	opacity: 1;
+	transition: 500ms ease-in-out;
+	left: 30.5%;
+}
+
+.slide-in2{
+	opacity: 1;
+	transition: 500ms ease-in-out;
+	visibility: visible;
+	left: 42.5%;
+}
+
+.slide-top{
+	opacity: 1;
+	transition: 500ms ease-in-out;
+	top: 53%;
+}
+
+.heading1-active{
+	opacity: 1;
+	visibility: visible;
+	transition: 500ms ease-in-out;
+	top: 9%;
+}
+
+.r1-active{
+	opacity: 1;
+	visibility: visible;
+	top: 25%;
+	transition: 500ms ease-in-out;
+}
+
+.r2-active{
+	opacity: 1;
+	visibility: visible;
+	top: 40%;
+	transition: 500ms ease-in-out;
+}
+
+.r3-active{
+	opacity: 1;
+	top: 55%;
+	transition: 500ms ease-in-out;
+}
+
+.r4-active{
+	opacity: 1;
+	visibility: visible;
+	top: 70%;
+	transition: 500ms ease-in-out;
+}
+
+.r5-active{
+	opacity: 1;
+	top: 85%;
+	transition: 500ms ease-in-out;
+}
+
+.c1{
+	transition: 500ms ease-in-out;
+	transform: scale(1.5);
+	opacity: 0;
+}
+
+.c2{
+	transition: 500ms ease-in-out;
+	transform: scale(0.5);
+	opacity: 0;
+}
+
+.c-active{
+	transition: 500ms ease-in-out;
+	transform: scale(1);
+	opacity: 1;
+}
+
+.dot2, .dot1, .dot3{
+	transition: 500ms ease-in-out;
+	transform: scale(1.4);
+	opacity: 0;
+}
+
+.dot-active{
+	transition: 500ms ease-in-out;
+	opacity: 1;
+	transform: scale(1);
+}
