@@ -84,6 +84,9 @@ $(function(){
 		setTimeout(function(){
 			$('.dot3').addClass('dot-active')
 		}, 2200)
+		setTimeout(function(){
+			$('.creds').addClass('creds-active')
+		}, 3000)
 	}
 
 	var scroller=function(b){
@@ -139,6 +142,10 @@ $(function(){
 			scroller(g);
 			console.log('up');
 		}
+	})
+
+	$('.auth').click(function(){
+		window.open("https://dewanshrawat.me/")
 	})
 
 	var q=0;

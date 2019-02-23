@@ -230,7 +230,7 @@ body{
 	padding-right: 20vmin;
 	top: 35.5%;
 	color: #fff;
-	left: 40.1%;
+	left: 40%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3vmin;
 	transition: 500ms ease-in-out;
@@ -243,7 +243,7 @@ body{
 	top: 51.5%;
 	color: #fff;
 	padding-right: 20vmin;
-	left: 40.1%;
+	left: 40%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3vmin;
 	transition: 500ms ease-in-out;
@@ -256,7 +256,7 @@ body{
 	padding-right: 20vmin;
 	top: 65.5%;
 	color: #fff;
-	left: 39.5%;
+	left: 40%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3vmin;
 	transition: 500ms ease-in-out;
@@ -269,7 +269,7 @@ body{
 	top: 80.5%;
 	color: #fff;
 	padding-right: 20vmin;
-	left: 36.2%;
+	left: 40%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3vmin;
 	transition: 500ms ease-in-out;
@@ -416,4 +416,27 @@ body{
 	transition: 500ms ease-in-out;
 	opacity: 1;
 	transform: scale(1);
+}
+
+.creds{
+	position: absolute;
+	top: 70%;
+	opacity: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4vmin;
+	transition: 500ms;
+	font-weight: 200;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+}
+
+.creds-active{
+	opacity: 1;
+	top: 92.5%;
+	transition: 500ms;
+}
+
+.auth{
+	cursor: pointer;
 }
